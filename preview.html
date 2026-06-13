@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HAN BOWL — เกาหลีในชามเดียว · Preview</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        terracotta: "#8B3A1F", burnt: "#D87A3B", charcoal: "#1A1A1A",
+        cream: "#F5E6D3", kimchi: "#C73E1D", sesame: "#E8C57D",
+      },
+      fontFamily: {
+        display: ["'Playfair Display'", "serif"],
+        sans: ["'IBM Plex Sans Thai'", "system-ui", "sans-serif"],
+        korean: ["'Noto Serif KR'", "serif"],
+      },
+    },
+  },
+};
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #F5E6D3; color: #1A1A1A; }
+  .grain::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index:1;
+    opacity: 0.06; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body class="font-sans antialiased">
+<!-- ───────── NAV ───────── -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 bg-cream/95 backdrop-blur shadow-sm py-2.5">
+  <nav class="mx-auto max-w-7xl px-6 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2.5">
+      <svg viewBox="0 0 200 200" class="h-10 w-10">
+        <circle cx="100" cy="100" r="92" fill="#8B3A1F"/>
+        <path d="M40 100 Q40 145 100 145 Q160 145 160 100 Z" fill="#F5E6D3"/>
+        <ellipse cx="100" cy="100" rx="60" ry="10" fill="#D87A3B"/>
+        <rect x="110" y="35" width="6" height="60" rx="3" fill="#1A1A1A" transform="rotate(15 113 65)"/>
+        <rect x="123" y="32" width="6" height="65" rx="3" fill="#1A1A1A" transform="rotate(20 126 64)"/>
+      </svg>
+      <span class="font-display font-black text-2xl tracking-wide">HAN <span class="text-terracotta">BOWL</span></span>
+    </a>
+    <ul class="hidden md:flex items-center gap-7 text-sm font-medium">
+      <li><a href="#menu" class="hover:text-terracotta transition-colors">เมนู</a></li>
+      <li><a href="#about" class="hover:text-terracotta">เกี่ยวกับ</a></li>
+      <li><a href="#location" class="hover:text-terracotta">ร้าน</a></li>
+      <li><a href="#order" class="hover:text-terracotta">สั่งเลย</a></li>
+      <li><a href="#order" class="bg-terracotta hover:bg-charcoal text-cream px-5 py-2.5 rounded-full font-semibold transition-colors">สั่งอาหาร</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ───────── HERO ───────── -->
+<section id="top" class="relative min-h-screen grain overflow-hidden">
+  <div class="absolute inset-0 z-0" style="background:#1A1A1A">
+    <img src="public/menu/Bowl02_Bulgogi_1080sq.jpg" alt="" class="w-full h-full object-cover object-right opacity-60"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/85 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/70"></div>
+  </div>
+  <div class="relative z-10 mx-auto max-w-7xl px-6 min-h-screen flex flex-col justify-center pt-24 pb-16">
+    <div class="max-w-3xl text-cream">
+      <p class="font-korean text-burnt text-lg tracking-widest mb-4">한 그릇의 한국</p>
+      <h1 class="font-display font-black text-6xl sm:text-7xl lg:text-8xl leading-[1.05] mb-5">
+        เกาหลี<br/><span class="text-burnt">ในชามเดียว</span>
+      </h1>
+      <p class="text-xl mb-3 text-cream/90 max-w-2xl">เกาหลีแท้ๆ ในชามเดียว เร็ว 4 นาที</p>
+      <p class="text-base mb-9 text-cream/70 italic">Authentic Korean comfort. One bowl. 4 minutes.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#menu" class="bg-burnt hover:bg-cream hover:text-charcoal text-charcoal px-7 py-3.5 rounded-full font-semibold text-lg transition-all hover:scale-105 shadow-lg">ดูเมนูทั้งหมด →</a>
+        <a href="#order" class="border-2 border-cream/80 hover:bg-cream hover:text-charcoal text-cream px-7 py-3.5 rounded-full font-semibold text-lg transition-all">สั่ง Grab / LineMan</a>
+      </div>
+      <div class="grid grid-cols-3 gap-4 sm:gap-6 mt-16 max-w-2xl">
+        <div class="bg-cream/10 backdrop-blur-sm border border-cream/20 rounded-2xl p-4 text-center">
+          <div class="text-3xl mb-1">⚡</div>
+          <div class="font-display font-bold text-xl text-cream">4 นาที</div>
+          <div class="text-sm text-cream/70">เสิร์ฟเร็ว</div>
+        </div>
+        <div class="bg-cream/10 backdrop-blur-sm border border-cream/20 rounded-2xl p-4 text-center">
+          <div class="text-3xl mb-1">🥢</div>
+          <div class="font-display font-bold text-xl text-cream">เกาหลีแท้</div>
+          <div class="text-sm text-cream/70">วัตถุดิบนำเข้า</div>
+        </div>
+        <div class="bg-cream/10 backdrop-blur-sm border border-cream/20 rounded-2xl p-4 text-center">
+          <div class="text-3xl mb-1">💰</div>
+          <div class="font-display font-bold text-xl text-cream">เริ่ม 99฿</div>
+          <div class="text-sm text-cream/70">ราคาคุ้ม</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── MENU ───────── -->
+<section id="menu" class="py-24 bg-cream">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="text-center mb-14">
+      <p class="font-korean text-terracotta tracking-widest mb-3">메뉴</p>
+      <h2 class="font-display font-black text-6xl mb-4">เมนู<span class="text-terracotta">ทั้งหมด</span></h2>
+      <p class="text-charcoal/70 text-lg max-w-2xl mx-auto">10 ชามฮีโร่ · 4 ซุปร้อน · เครื่องเคียง · ทุกอย่างทำสด ใน 4–8 นาที</p>
+    </div>
+    <div class="flex gap-3 mb-10 overflow-x-auto pb-2 justify-center">
+      <button class="px-5 py-2 rounded-full text-sm font-semibold bg-terracotta text-cream shadow-md">ทั้งหมด</button>
+      <button class="px-5 py-2 rounded-full text-sm font-semibold bg-charcoal/5 hover:bg-charcoal/10">🥛 ไม่เผ็ด</button>
+      <button class="px-5 py-2 rounded-full text-sm font-semibold bg-charcoal/5">🌶 เผ็ดกลาง</button>
+      <button class="px-5 py-2 rounded-full text-sm font-semibold bg-charcoal/5">🔥 เผ็ดมาก</button>
+      <button class="px-5 py-2 rounded-full text-sm font-semibold bg-charcoal/5">🥬 มังสวิรัติ</button>
+    </div>
+    <div id="menu-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+
+    <div class="mt-24">
+      <div class="mb-8">
+        <p class="font-korean text-terracotta tracking-wider text-sm mb-1">국</p>
+        <h3 class="font-display font-black text-4xl">ซุปร้อน · Mini Soups</h3>
+      </div>
+      <div id="soup-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+    <div class="mt-24">
+      <div class="mb-8">
+        <p class="font-korean text-terracotta tracking-wider text-sm mb-1">반찬 & 음료</p>
+        <h3 class="font-display font-black text-4xl">เครื่องเคียง · เครื่องดื่ม</h3>
+      </div>
+      <div id="side-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── ABOUT ───────── -->
+<section id="about" class="py-24 bg-charcoal text-cream relative overflow-hidden">
+  <span class="absolute -right-10 -top-20 font-korean text-burnt/10 text-[420px] font-bold leading-none select-none">한</span>
+  <div class="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-20 items-center">
+    <div>
+      <p class="font-korean text-burnt tracking-widest mb-3">우리의 이야기</p>
+      <h2 class="font-display font-black text-6xl leading-tight mb-6">เรื่องราว<br/><span class="text-burnt">ของชามนี้</span></h2>
+      <div class="space-y-4 text-cream/85 text-lg leading-relaxed">
+        <p>HAN BOWL เกิดจากความหลงใหลในรสชาติเกาหลีแบบ <em class="text-burnt not-italic font-semibold">homestyle</em> — อาหารที่คุณยายเกาหลีทำให้ครอบครัวกินทุกวัน อบอุ่น เผ็ดร้อน เข้มข้น</p>
+        <p>เรานำสูตรนั้นมาทำให้คนกรุงเทพกินได้ง่าย <strong class="text-cream">จานเดียวพอ เร็ว 4 นาที ราคาเริ่ม 99 บาท</strong> — ไม่ต้องไปร้านบุฟเฟ่ต์เกาหลี ไม่ต้องสั่งหลายเมนู</p>
+        <p class="text-cream/70">เราใช้ <span class="text-burnt font-semibold">โคชูจัง</span> นำเข้าตรงจากเกาหลี · <span class="text-burnt font-semibold">กิมจิหมักเอง</span> · <span class="text-burnt font-semibold">ไม่ใช้ผงชูรส</span></p>
+      </div>
+      <div class="mt-10 grid grid-cols-3 gap-6">
+        <div class="border-l-2 border-burnt pl-4"><div class="font-display font-black text-4xl text-burnt">10</div><div class="font-semibold text-sm">ชามฮีโร่</div><div class="text-cream/50 text-xs">Hero Bowls</div></div>
+        <div class="border-l-2 border-burnt pl-4"><div class="font-display font-black text-4xl text-burnt">4</div><div class="font-semibold text-sm">นาที</div><div class="text-cream/50 text-xs">Avg cook time</div></div>
+        <div class="border-l-2 border-burnt pl-4"><div class="font-display font-black text-4xl text-burnt">99฿</div><div class="font-semibold text-sm">เริ่มต้น</div><div class="text-cream/50 text-xs">Starting price</div></div>
+      </div>
+    </div>
+    <div class="relative aspect-square max-w-md mx-auto lg:max-w-none">
+      <div class="absolute inset-0 bg-terracotta rounded-3xl rotate-3"></div>
+      <div class="absolute inset-0 bg-burnt rounded-3xl -rotate-2"></div>
+      <img src="public/menu/Bowl02_Bulgogi_1080sq.jpg" alt="" class="relative w-full h-full object-cover rounded-3xl shadow-2xl"/>
+      <div class="absolute -bottom-8 -left-8 bg-cream text-charcoal rounded-2xl px-5 py-4 shadow-xl">
+        <p class="font-korean text-terracotta text-xs">정통</p>
+        <p class="font-display font-black text-xl">เกาหลีแท้</p>
+        <p class="text-xs text-charcoal/60">Authentic recipe</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── LOCATION ───────── -->
+<section id="location" class="py-24 bg-cream">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="text-center mb-12">
+      <p class="font-korean text-terracotta tracking-widest mb-3">위치</p>
+      <h2 class="font-display font-black text-6xl">แวะมา<span class="text-terracotta">ที่ร้าน</span></h2>
+    </div>
+    <div class="grid lg:grid-cols-5 gap-10">
+      <div class="lg:col-span-3 rounded-3xl overflow-hidden shadow-lg aspect-[4/3] lg:aspect-auto bg-charcoal/5 border border-charcoal/10">
+        <iframe src="https://maps.google.com/maps?q=ศรีบูรพา+9+สวนเสรีไทย+กรุงเทพ&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" class="w-full h-full min-h-[320px]" style="border:0" title="HAN BOWL"></iframe>
+      </div>
+      <div class="lg:col-span-2 space-y-6">
+        <div class="bg-terracotta text-cream rounded-3xl p-7">
+          <h3 class="font-display font-black text-2xl mb-3">📍 ที่อยู่</h3>
+          <p class="text-cream/95 leading-relaxed mb-1">ปากซอยศรีบูรพา 9 (ตรงข้ามสวนเสรีไทย)</p>
+          <p class="text-cream/70 text-sm">Soi Sriburapha 9, opposite Seri Thai Park, Bangkok</p>
+          <a class="mt-5 inline-flex items-center gap-2 bg-cream text-terracotta font-bold px-5 py-2.5 rounded-full">🧭 นำทาง</a>
+        </div>
+        <div class="bg-charcoal text-cream rounded-3xl p-7">
+          <h3 class="font-display font-black text-2xl mb-4">🕐 เวลาเปิด</h3>
+          <div class="space-y-2.5">
+            <div class="flex justify-between border-b border-cream/10 pb-2"><span>จันทร์–ศุกร์</span><span class="font-semibold text-burnt">10:30–21:30</span></div>
+            <div class="flex justify-between"><span>เสาร์–อาทิตย์</span><span class="font-semibold text-burnt">10:30–22:00</span></div>
+          </div>
+        </div>
+        <div class="bg-cream border-2 border-terracotta rounded-3xl p-7">
+          <h3 class="font-display font-black text-2xl mb-3">📞 ติดต่อ</h3>
+          <p class="font-semibold py-1">081-234-5678</p>
+          <p class="font-semibold py-1">LINE: @hanbowl</p>
+          <p class="py-1">hello@hanbowl.co</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── ORDER ───────── -->
+<section id="order" class="py-24 bg-burnt text-charcoal relative overflow-hidden">
+  <span class="absolute -left-10 top-10 font-korean text-charcoal/5 text-[400px] font-bold leading-none select-none">주문</span>
+  <div class="relative mx-auto max-w-5xl px-6">
+    <div class="text-center mb-14">
+      <p class="font-korean text-terracotta tracking-widest mb-3">주문하세요</p>
+      <h2 class="font-display font-black text-6xl mb-3">สั่งเลย ส่งถึงคุณ</h2>
+      <p class="text-charcoal/80 text-lg max-w-xl mx-auto">เลือกช่องทางที่สะดวก · หรือเดินมาที่ร้านได้เลย</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-5">
+      <a href="#" class="bg-emerald-600 text-white rounded-3xl p-7 shadow-lg flex flex-col items-start gap-3">
+        <span class="text-4xl">🛵</span>
+        <div><div class="font-display font-black text-2xl">Grab Food</div><div class="text-white/85 text-sm">เดลิเวอรี่ทั่วกรุงเทพ</div></div>
+        <span class="mt-auto font-semibold text-sm">สั่งเลย →</span>
+      </a>
+      <a href="#" class="bg-yellow-500 text-white rounded-3xl p-7 shadow-lg flex flex-col items-start gap-3">
+        <span class="text-4xl">🟡</span>
+        <div><div class="font-display font-black text-2xl">LineMan</div><div class="text-white/85 text-sm">ส่งไว 30 นาที</div></div>
+        <span class="mt-auto font-semibold text-sm">สั่งเลย →</span>
+      </a>
+      <a href="#" class="bg-green-500 text-white rounded-3xl p-7 shadow-lg flex flex-col items-start gap-3">
+        <span class="text-4xl">💬</span>
+        <div><div class="font-display font-black text-2xl">LINE Official</div><div class="text-white/85 text-sm">สั่งตรง · ส่วนลดสมาชิก</div></div>
+        <span class="mt-auto font-semibold text-sm">สั่งเลย →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── FOOTER ───────── -->
+<footer class="bg-charcoal text-cream/80 py-14">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid sm:grid-cols-3 gap-8 mb-10">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <svg viewBox="0 0 200 200" class="h-12 w-12">
+            <circle cx="100" cy="100" r="92" fill="#8B3A1F"/>
+            <path d="M40 100 Q40 145 100 145 Q160 145 160 100 Z" fill="#F5E6D3"/>
+            <ellipse cx="100" cy="100" rx="60" ry="10" fill="#D87A3B"/>
+          </svg>
+          <div>
+            <div class="font-display font-black text-2xl text-cream">HAN <span class="text-burnt">BOWL</span></div>
+            <div class="text-xs text-cream/60">เกาหลีในชามเดียว</div>
+          </div>
+        </div>
+        <p class="text-sm text-cream/60 max-w-xs">เกาหลีแท้ในชามเดียว · ส่งถึงคุณใน 30 นาที · เริ่ม 99 บาท</p>
+      </div>
+      <div>
+        <h4 class="text-cream font-semibold mb-3 uppercase text-xs tracking-wider">ติดต่อ</h4>
+        <p class="text-sm mb-1">ปากซอยศรีบูรพา 9 (ตรงข้ามสวนเสรีไทย)</p>
+        <p class="text-sm mb-1">081-234-5678</p>
+        <p class="text-sm mb-1">LINE @hanbowl</p>
+        <p class="text-sm">hello@hanbowl.co</p>
+      </div>
+      <div>
+        <h4 class="text-cream font-semibold mb-3 uppercase text-xs tracking-wider">ติดตาม</h4>
+        <div class="flex gap-3">
+          <a class="w-11 h-11 grid place-items-center bg-cream/10 hover:bg-burnt rounded-full">📷</a>
+          <a class="w-11 h-11 grid place-items-center bg-cream/10 hover:bg-burnt rounded-full">🎵</a>
+          <a class="w-11 h-11 grid place-items-center bg-cream/10 hover:bg-burnt rounded-full">👤</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-cream/10 text-xs text-cream/40 flex flex-col sm:flex-row gap-2 justify-between">
+      <p>© 2026 HAN BOWL. All rights reserved.</p>
+      <p>Made with 🥢 in Bangkok</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ───────── Floating Actions ───────── -->
+<div class="fixed bottom-5 right-5 z-40 flex flex-col gap-3">
+  <a class="w-14 h-14 grid place-items-center rounded-full bg-green-500 text-white shadow-2xl hover:scale-110 transition-transform"><span class="text-2xl">💬</span></a>
+  <a class="w-14 h-14 grid place-items-center rounded-full bg-terracotta text-cream shadow-2xl hover:scale-110 transition-transform"><span class="text-2xl">📞</span></a>
+</div>
+
+<script>
+const BOWLS = [
+  {id:"maeun-krapow",th:"ข้าวกะเพราเกาหลีเผ็ดร้อน",en:"Maeun Krapow Bowl",kr:"매운 크라파오",desc:"หมูสับผัดน้ำพริกโคชูจัง+ใบกะเพรา ราดข้าวสวยร้อนๆ พร้อมไข่ดาว",price:119,img:"Bowl01_MaeunKrapow_1080sq.jpg",spice:3,t:4,tags:["signature"]},
+  {id:"bulgogi",th:"ข้าวบูลโกกีหมัก 24 ชม.",en:"Classic Bulgogi Bowl",kr:"불고기",desc:"เนื้อหมัก 24 ชม.ในซอสบูลโกกี ผัดกับหอมใหญ่ ราดข้าวสวย โรยงา",price:149,img:"Bowl02_Bulgogi_1080sq.jpg",spice:0,t:5,tags:["signature"]},
+  {id:"jeyuk",th:"ข้าวเจยุก (หมูผัดเผ็ดเกาหลี)",en:"Jeyuk Bokkeum Bowl",kr:"제육볶음",desc:"หมูสามชั้นผัดซอสโคชูจังเผ็ด+กิมจิ ราดข้าว เพิ่มไข่ลวก",price:129,img:"Bowl03_Jeyuk_1080sq.jpg",spice:3,t:5,tags:["signature"]},
+  {id:"dakgalbi-cheese",th:"ข้าวดักกัลบีชีสยืด",en:"Cheese Dakgalbi Bowl",kr:"치즈 닭갈비",desc:"ไก่ผัดซอสโคชูจัง+มันหวาน ราดชีสมอสซาเรลล่ายืด",price:149,img:"Bowl04_DakgalbiCheese_1080sq.jpg",spice:2,t:6,tags:["signature","new"]},
+  {id:"dak-bulgogi",th:"ข้าวไก่บูลโกกีหวาน",en:"Dak Bulgogi Bowl",kr:"닭불고기",desc:"ไก่หมักซอสบูลโกกีหวาน-ละมุน เหมาะกับคนไม่เผ็ด เด็กกินได้",price:119,img:"Bowl05_DakBulgogi_1080sq.jpg",spice:0,t:5,tags:["fitness"]},
+  {id:"yangnyeom",th:"ข้าวไก่ทอดซอสยังนยอม",en:"Yangnyeom Fried Chicken",kr:"양념치킨",desc:"ไก่ทอดกรอบ คลุกซอสยังนยอมหวาน-เผ็ด เสิร์ฟกับข้าว",price:139,img:"Bowl06_YangnyeomChicken_1080sq.png",spice:2,t:7,tags:["signature"]},
+  {id:"beef",th:"ข้าวเนื้อพรีเมียมย่างเตาถ่าน",en:"Premium Charcoal Beef",kr:"프리미엄 소고기",desc:"เนื้อสไลซ์เกรดพรีเมียมย่างไฟอ่อน คลุกซอสซีอิ๊วเกาหลี งา หอมใหญ่",price:199,img:"Bowl07_BeefPremium_1080sq.jpg",spice:0,t:6,tags:["premium"]},
+  {id:"ojingeo",th:"ข้าวปลาหมึกผัดเผ็ดเกาหลี",en:"Spicy Ojingeo Bowl",kr:"오징어볶음",desc:"ปลาหมึกสด ผัดซอสโคชูจังเข้มข้น+ผักรวม รสจัดจ้าน",price:139,img:"Bowl08_SpicyOjingeo_1080sq.jpg",spice:3,t:5,tags:["signature"]},
+  {id:"tonkatsu",th:"ข้าวทงคัตสึราดแกงกะหรี่เกาหลี",en:"Tonkatsu Curry Bowl",kr:"돈가스 카레",desc:"หมูทอดชุบเกล็ดขนมปังกรอบ ราดแกงกะหรี่เกาหลีเข้มข้น",price:149,img:"Bowl09_TonkatsuCurry_1080sq.jpg",spice:1,t:8,tags:["signature"]},
+  {id:"bibim",th:"ข้าวบิบิม Power",en:"Bibim Power Bowl",kr:"비빔밥",desc:"ข้าวยำเกาหลี ผักรวม 5 ชนิด + ไข่ดาว + เนื้อ ราดโคชูจัง — โปรตีนแน่น",price:129,img:"Bowl10_BibimPower_1080sq.jpg",spice:1,t:5,tags:["fitness","signature"]},
+];
+const SOUPS = [
+  {id:"kimchi-soup",th:"ซุปกิมจิ",en:"Kimchi Jjigae",kr:"김치찌개",desc:"ซุปกิมจิเข้มข้น เปรี้ยว-เผ็ด-อูมามิ",price:79,img:"Soup1_Kimchi_1080sq.png",spice:2,t:4,tags:[]},
+  {id:"egg-drop",th:"ซุปไข่หยดเกาหลี",en:"Korean Egg Drop",kr:"계란국",desc:"ซุปใส รสกลมกล่อม ไข่ตีหยดเป็นใย",price:59,img:"Soup2_EggDrop_1080sq.png",spice:0,t:3,tags:["vegetarian"]},
+  {id:"seaweed",th:"ซุปสาหร่ายเกาหลี",en:"Miyeok-guk",kr:"미역국",desc:"ซุปสาหร่ายวากาเมะ น้ำมันงา รสกลมกล่อม",price:69,img:"Soup3_Seaweed_1080sq.png",spice:0,t:3,tags:["vegetarian"]},
+  {id:"sundubu",th:"ซุนดูบูจีแก",en:"Sundubu Jjigae",kr:"순두부찌개",desc:"ซุปเต้าหู้นิ่มเผ็ด ตอกไข่สด หอมงา",price:89,img:"Soup4_Sundubu_1080sq.png",spice:2,t:4,tags:[]},
+];
+const SIDES = [
+  {id:"kimchi",th:"กิมจิทำเอง",en:"House Kimchi",desc:"กิมจิหมักเอง สด หอม กรอบ",price:39,img:"Side1_Kimchi_1080sq.png",spice:1,t:0,tags:["vegetarian"]},
+  {id:"danmuji",th:"หัวไชเท้าดอง (ดันมูจิ)",en:"Danmuji Pickle",desc:"หัวไชเท้าดองเหลือง กรุบ หวานเปรี้ยว",price:29,img:"Side2_Danmuji_1080sq.png",spice:0,t:0,tags:["vegetarian"]},
+  {id:"banana-milk",th:"บานาน่ามิลค์",en:"Korean Banana Milk",desc:"นมกล้วยเกาหลี เย็นๆ หอมหวาน",price:49,img:"Drink_BananaMilk_Yuja_1080sq.png",spice:0,t:0,tags:[]},
+  {id:"yuja",th:"ชายูจะร้อน/เย็น",en:"Yuja Citrus Tea",desc:"ชาส้มยูจะหอม รับประทานร้อนหรือเย็น",price:59,img:"Drink_BananaMilk_Yuja_1080sq.png",spice:0,t:0,tags:[]},
+];
+const SPICE_LABEL = ["ไม่เผ็ด","เผ็ดน้อย","เผ็ดกลาง","เผ็ดมาก"];
+const TAG_STYLE = {
+  signature: "bg-terracotta text-cream",
+  premium:   "bg-charcoal text-sesame",
+  fitness:   "bg-emerald-700 text-cream",
+  vegetarian:"bg-emerald-600 text-cream",
+  new:       "bg-burnt text-charcoal",
+};
+const TAG_TEXT = {
+  signature:"Signature",premium:"Premium",fitness:"Fitness",vegetarian:"มังสวิรัติ",new:"ใหม่"
+};
+
+function card(item) {
+  const spiceBadge = item.spice > 0
+    ? `<div class="absolute top-3 left-3 bg-cream/95 backdrop-blur px-2.5 py-1 rounded-full text-xs font-bold text-kimchi flex items-center gap-1">${"🌶".repeat(item.spice)}<span class="text-charcoal/70">${SPICE_LABEL[item.spice]}</span></div>`
+    : "";
+  const tagBadges = item.tags.slice(0,2).map(t =>
+    `<span class="text-xs font-bold px-2.5 py-1 rounded-full uppercase ${TAG_STYLE[t]}">${TAG_TEXT[t]}</span>`).join("");
+  const timeBadge = item.t > 0
+    ? `<div class="absolute bottom-3 left-3 bg-charcoal/85 text-cream text-xs px-2.5 py-1 rounded-full flex items-center gap-1">⚡ ${item.t} นาที</div>`
+    : "";
+  const krSpan = item.kr ? `<span class="font-korean ml-1.5 text-charcoal/50">· ${item.kr}</span>` : "";
+  return `<article class="group bg-cream rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-charcoal/5">
+    <div class="relative aspect-square overflow-hidden bg-charcoal/5">
+      <img src="public/menu/${item.img}" alt="${item.th}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+      ${spiceBadge}
+      <div class="absolute top-3 right-3 flex flex-col gap-1 items-end">${tagBadges}</div>
+      ${timeBadge}
+    </div>
+    <div class="p-5">
+      <div class="flex items-start justify-between gap-3 mb-1.5">
+        <div class="min-w-0">
+          <h3 class="font-display font-black text-xl leading-tight">${item.th}</h3>
+          <p class="text-sm text-terracotta font-medium">${item.en}${krSpan}</p>
+        </div>
+        <div class="font-display font-black text-terracotta text-2xl whitespace-nowrap">฿${item.price}</div>
+      </div>
+      <p class="text-sm text-charcoal/70 leading-relaxed">${item.desc}</p>
+    </div>
+  </article>`;
+}
+document.getElementById("menu-grid").innerHTML = BOWLS.map(card).join("");
+document.getElementById("soup-grid").innerHTML = SOUPS.map(card).join("");
+document.getElementById("side-grid").innerHTML = SIDES.map(card).join("");
+</script>
+</body>
+</html>

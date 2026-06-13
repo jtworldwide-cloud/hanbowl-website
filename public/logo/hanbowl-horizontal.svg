@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" fill="none">
+  <!-- Bowl icon -->
+  <g transform="translate(20, 20)">
+    <circle cx="60" cy="60" r="55" fill="#8B3A1F"/>
+    <path d="M15 60 Q15 87 60 87 Q105 87 105 60 Z" fill="#F5E6D3"/>
+    <ellipse cx="60" cy="60" rx="35" ry="6" fill="#D87A3B"/>
+    <rect x="66" y="18" width="4" height="36" rx="2" fill="#1A1A1A" transform="rotate(15 68 36)"/>
+    <rect x="75" y="16" width="4" height="40" rx="2" fill="#1A1A1A" transform="rotate(20 77 36)"/>
+    <path d="M48 32 Q44 26 48 19" stroke="#F5E6D3" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M60 32 Q56 26 60 19" stroke="#F5E6D3" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="160" y="78" font-family="Georgia, 'Playfair Display', serif" font-weight="900" font-size="56" fill="#1A1A1A" letter-spacing="2">HAN</text>
+  <text x="290" y="78" font-family="Georgia, 'Playfair Display', serif" font-weight="900" font-size="56" fill="#8B3A1F" letter-spacing="2">BOWL</text>
+  <!-- Tagline -->
+  <text x="160" y="110" font-family="'IBM Plex Sans Thai', sans-serif" font-size="18" fill="#1A1A1A" opacity="0.7">เกาหลีในชามเดียว · Korean comfort, one bowl</text>
+</svg>

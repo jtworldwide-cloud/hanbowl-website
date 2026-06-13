@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Bowl icon -->
+  <circle cx="100" cy="100" r="92" fill="#8B3A1F"/>
+  <path d="M40 100 Q40 145 100 145 Q160 145 160 100 Z" fill="#F5E6D3"/>
+  <ellipse cx="100" cy="100" rx="60" ry="10" fill="#D87A3B"/>
+  <!-- Chopsticks -->
+  <rect x="110" y="35" width="6" height="60" rx="3" fill="#1A1A1A" transform="rotate(15 113 65)"/>
+  <rect x="123" y="32" width="6" height="65" rx="3" fill="#1A1A1A" transform="rotate(20 126 64)"/>
+  <!-- Steam -->
+  <path d="M80 55 Q75 45 80 35 Q85 25 80 15" stroke="#F5E6D3" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M100 55 Q95 45 100 35 Q105 25 100 15" stroke="#F5E6D3" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+</svg>
